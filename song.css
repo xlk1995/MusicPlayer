@@ -1,0 +1,50 @@
+
+/**初始化***/
+*{margin: 0;padding: 0;box-sizing: border-box;}
+*::before,*::after{box-sizing: border-box;}
+
+@keyframes circling{
+    0%{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(1turn); 
+    }
+}
+.page{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    background: transparent url(http://p3.music.126.net/z4p2xss2a50qNHe6TLFdoA==/2425522650910827.jpg) no-repeat center;
+    background-size: cover;
+}
+.disc-container{
+    position:relative;
+}
+.disc-container  .pointer {
+    width: 26vw;
+    position: absolute;
+    left: 45vw;
+}
+.disc-container .disc{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    margin-top:19vw;
+}
+.disc-container  .ring{
+    width:82vw;
+}
+.disc-container  .light{
+    width:82vw;
+    position: absolute;
+    animation: circling 20s infinite linear;
+}
+.disc-container  .cover{
+    width: 54vw;
+    position: absolute;
+    border-radius: 50%;
+    animation: circling 20s infinite linear;
+}
+.song-description{}
+.page > .links{}
